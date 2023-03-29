@@ -61,7 +61,7 @@
   <script>
     function GetWeatherInfo() {
       var selectedCity=document.getElementById("cities_menu").value;
-      var url = "http://api.openweathermap.org/data/2.5/weather?q="+selectedCity + "&units=metric&appid=485886c575fedccd988be67811ba63ad";
+      var url = "http://api.openweathermap.org/data/2.5/weather?q="+selectedCity + "&units=metric&appid={APIKEY}";
       fetch(url)
         .then(response => response.json())
         .then(data => ProcessJSON(data))
