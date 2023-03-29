@@ -36,7 +36,7 @@
   </div>
   <script>
     function GetInfo() {
-      var url = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=485886c575fedccd988be67811ba63ad&lang=fr";
+      var url = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={APIKEY}&lang=fr";
       fetch(url)
         .then(response => response.json())
         .then(data => ProcessJSON(data))
